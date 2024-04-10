@@ -76,7 +76,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-38.303" vlookat="34.768" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-46.699" vlookat="43.172" fovtype="MFOV" fov="140.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/8-1.tiles/preview.jpg" />
 
@@ -86,7 +86,7 @@
 
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-46.095" atv="35.228" width="64" height="79" linkedscene="scene_8-2" />
 		
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-15.552" atv="19.172" width="64" height="79" linkedscene="scene_8-2" linkedscene_lookat="" linkedscene_hoffset="207.27" use3dtransition="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="1.880" atv="23.464" width="64" height="79" linkedscene="scene_8-2" linkedscene_lookat="" linkedscene_hoffset="207.27" use3dtransition="true" />
 
 	</scene>
 
