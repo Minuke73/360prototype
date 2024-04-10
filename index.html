@@ -26,6 +26,48 @@
 </div>
 
 <h5 class="modal-title" style="display: block;position: fixed; top: 0;margin: 20px; font-size: 30px;">한반도 지형 </h5>
+<!-- modal -->
+<div id="modal1" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<h2>국보 숭례문 </h2>  
+				서울특별시 중구에 있는 숭례문의 정면이에요. 숭례문은 1962년 우리나라 국보로 지정되었어요.  
 
+            </div>
+        </div>
+    </div>
+</div> 
+<div id="modal2" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">한양 도성의 정문, 숭례문 </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+				<h2>한양 도성의 정문, 숭례문 </h2> 
+				 조선 시대에 세운 한양 도성의 남쪽 정문으로, 옛날 사람들은 한양에 가려면 숭례문을 지나야 했어요.
+					
+            </div>
+        </div>
+    </div>
+</div> 
+<script> 
+	function krpano_onready_callback(krpano_interface)
+	{
+		krpano = krpano_interface;
+	}
+    
+	function modalclick(id){
+		// console.log(id);
+		var $modal = $('#'+id) ;
+        $modal.modal('show') ;  
+	}   
+</script>
 </body>
 </html>
