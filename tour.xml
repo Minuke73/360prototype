@@ -84,9 +84,9 @@
 			<cube url="panos/8-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
 		</image>
 
-		<hotspot type="image" url="/skin/vtourskin_point1.png" name="spot1" style="skin_hotspotstyle" ath="-46.095" atv="35.228" width="282" height="166" linkedscene="scene_8-1" />
+		<hotspot type="image" url="skin/vtourskin_point1.png" name="spot1" style="skin_hotspotstyle" ath="-46.095" atv="35.228" width="282" height="166" linkedscene="scene_8-1" />
 		
-		<hotspot type="image" url="/skin/vtourskin_point2.png" name="spot3" style="skin_hotspotstyle" ath="-15.552" atv="19.172" width="282" height="166" linkedscene="scene_8-1" />
+		<hotspot type="image" url="skin/vtourskin_point2.png" name="spot3" style="skin_hotspotstyle" ath="-15.552" atv="19.172" width="282" height="166" linkedscene="scene_8-1" />
 
 	</scene>
 
