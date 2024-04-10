@@ -20,10 +20,10 @@ img{max-width:100%}
 
 #pano *{box-sizing: content-box;}
 /* modal */
-.modal-dialog{max-width:none;width: 100%;padding:30px;}
-.modal-content{display: flex;flex-direction: row; background: transparent;border:0 !important}
-.modal-header{ padding: 0;margin-right: 20px;border:0 !important}
-.modal-body{display: flex;flex-direction: column;justify-content: center;padding:20px 30px 30px 220px !important;flex:1; border:5px solid #f74d32;border-radius:20px;font-size: 25px;color:#404040  ;font-weight: 500; background: #fff url(skin/modal-char.png) no-repeat bottom left 35px;min-height: 190px;}
+.modal-dialog{max-width:none;width: 100%;padding:30px; align-items:flex-end;}
+.modal-content{display: flex;flex-direction: row; background: transparent;border:0 align-items: flex-end;!important}
+.modal-header{ padding: 0;margin-right: 0px;border:0 !important}
+.modal-body{display: flex;flex-direction: column;justify-content: center;padding:20px 30px 30px 30px !important;flex:1; border:5px solid #f74d32;border-radius:20px;font-size: 25px;color:#404040  ;font-weight: 500; background: #fff url(skin/modal-char.png) no-repeat bottom left 35px;min-height: 190px;}
 .modal-body h2{font-weight: 600;font-size: 36px;margin-bottom: 15px;}
 .modal-header .close{position: absolute;top:0;right:0;margin: 0; padding:10px; font-size:35px; color:#f74d32 !important;opacity:1 ;z-index: 9;}
 .modal-title{display: none;font-weight:700;font-size:75px;background-color: #534741;color: #fff;font-size: 27px;padding: 0 20px;border-radius: 10px;line-height: 51px;} 
