@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<krpano version="1.20.10" title="Virtual Tour">
+﻿<krpano version="1.20.10" title="">
 
 	<include url="skin/vtourskin.xml" />
+	<include url="skin/customskin.xml" />
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -70,9 +70,15 @@
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
 
-
 	
-	<scene name="scene_8-1" title="#1" onstart="" thumburl="panos/8-1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	
+	<scene name="scene_8-1" title="" onstart="" thumburl="panos/8-1.tiles/thumb.jpg" lat="" lng="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -84,9 +90,8 @@
 			<cube url="panos/8-1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1664,3200,6400" />
 		</image>
 
-		<hotspot type="image" name="spot1" url="skin/hotspot1.png" style="skin_hotspotstyle" ath="-46.095" atv="35.228" width="282" height="166" />
-		
-		<hotspot type="image" name="spot3" url="skin/hotspot2.png" style="skin_hotspotstyle" ath="-15.552" atv="19.172" width="282" height="166" />
+		<hotspot type="image" name="spot1" url="skin/hotspot1.png" style="skin_hotspotstyle" ath="-46.095" atv="35.228" width="282" height="166" linkmodal="modal1" onclick="custom_hotspotstyle_click();" />
+		<hotspot type="image" name="spot3" url="skin/hotspot2.png" style="skin_hotspotstyle" ath="-15.552" atv="19.172" width="282" height="166" linkmodal="modal2" onclick="custom_hotspotstyle_click();" />
 
 	</scene>
 
