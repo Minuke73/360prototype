@@ -76,7 +76,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="-33.142" vlookat="40.597" fovtype="MFOV" fov="127.183" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-33.476" vlookat="35.267" fovtype="MFOV" fov="131.719" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/8-1.tiles/preview.jpg" />
 
